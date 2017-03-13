@@ -4,7 +4,7 @@
 //
 //  Created by 魏家园潇 on 2017/3/13.
 //  Copyright © 2017年 xgyg. All rights reserved.
-//
+//  图片icloud状态的提示
 
 #import "PhotosLoader.h"
 
@@ -76,8 +76,15 @@ static PhotosLoader *sharePhotoTool = nil;
         NSComparisonResult result = [stamp1 compare:stamp2 options:NSCaseInsensitiveSearch];
         return result == NSOrderedAscending; //升序
     }];
-    
-    return resultArr;
+    photoAblumList = [NSMutableArray array];
+    for (NSDictionary * dict in resultArr) {
+        if ([dict[@"title"] isEqualToString:@"所有照片"]) {
+            [photoAblumList insertObject:dict atIndex:0];
+        }else{
+            [photoAblumList addObject:dict];
+        }
+    }
+    return photoAblumList;
 }
 
 - (NSString *)transformAblumTitle:(NSString *)title
@@ -120,16 +127,13 @@ static PhotosLoader *sharePhotoTool = nil;
     NSMutableArray<PHAsset *> *assets = [NSMutableArray array];
     
     PHFetchOptions *option = [[PHFetchOptions alloc] init];
-    //ascending 为YES时，按照照片的创建时间升序排列;为NO时，则降序排列
+    //ascending 为YES时，按照照片的创建时间升序排列;为NO时，则降序排列;降序排列以后,图片最新的在数组最前面
     option.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:ascending]];
-    
     PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:option];
-    
     [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         PHAsset *asset = (PHAsset *)obj;
         [assets addObject:asset];
     }];
-    
     return assets;
 }
 
@@ -157,9 +161,9 @@ static PhotosLoader *sharePhotoTool = nil;
      这个属性只有在 synchronous 为 true 时有效。
      */
     option.resizeMode = resizeMode;//控制照片尺寸
-    //option.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;//控制照片质量
-    //option.synchronous = YES;
-    option.networkAccessAllowed = YES;
+    option.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;//控制照片质量
+//    option.synchronous = YES;//不能同步,否则会卡段
+    //option.networkAccessAllowed = NO;//是否下载网络图片
     //param：targetSize 即你想要的图片尺寸，若想要原尺寸则可输入PHImageManagerMaximumSize
     [[PHCachingImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFit options:option resultHandler:^(UIImage * _Nullable image, NSDictionary * _Nullable info) {
         completion(image);

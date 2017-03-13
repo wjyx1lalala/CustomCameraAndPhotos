@@ -6,6 +6,7 @@
 #import "LJ_FileTool.h"
 #import "ViewController.h"
 #import "PhotoLibraryController.h"
+#import "TopViewAlert.h"
 
 @interface AppDelegate ()<ZYSuspensionViewDelegate>
 
@@ -18,11 +19,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ImagePickerController * vc =  [[ImagePickerController alloc] initWithRootViewController:[[CameraController alloc] init]];
-    vc.navigationBarHidden = YES;
+//    ImagePickerController * vc =  [[ImagePickerController alloc] initWithRootViewController:[[CameraController alloc] init]];
+//    vc.navigationBarHidden = YES;
     
-//    self.window.rootViewController = vc;
-    self.window.rootViewController = [PhotoLibraryController create];
+    self.window.rootViewController = [ViewController new];
+//    self.window.rootViewController = [PhotoLibraryController create];
     //[NativeNavigationController createWithLaunchOptions:launchOptions];
     [self.window makeKeyAndVisible];
     
@@ -39,6 +40,8 @@
 #pragma mark - 悬浮按钮点击事件
 - (void)suspensionViewClick:(ZYSuspensionView *)suspensionView{
     
+    [TopViewAlert showWithMessage:@"请在系统相册下载iCloud图片后重试"];
+    return;
     [[LJ_FileTool sharedTool] openAppDirectoryPanel];
     
 }

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
 
 @interface PhotoImageCollectionCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imgV;
-
+@property (nonatomic,strong)PHAsset * asset;
 @end

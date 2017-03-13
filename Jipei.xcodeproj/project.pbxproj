@@ -47,6 +47,7 @@
 		DCB804AB1E76F756007340EC /* PhotosGroupDetailContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804AA1E76F756007340EC /* PhotosGroupDetailContoller.m */; };
 		DCB804B11E76F820007340EC /* PhotoImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */; };
 		DCB804B21E76F820007340EC /* PhotoImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */; };
+		DCB804B51E7712A7007340EC /* TopViewAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804B41E7712A7007340EC /* TopViewAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,8 @@
 		DCB804AE1E76F820007340EC /* PhotoImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImageCollectionCell.h; sourceTree = "<group>"; };
 		DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImageCollectionCell.m; sourceTree = "<group>"; };
 		DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoImageCollectionCell.xib; sourceTree = "<group>"; };
+		DCB804B31E7712A7007340EC /* TopViewAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewAlert.h; sourceTree = "<group>"; };
+		DCB804B41E7712A7007340EC /* TopViewAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				DCB804AE1E76F820007340EC /* PhotoImageCollectionCell.h */,
 				DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */,
 				DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */,
+				DCB804B31E7712A7007340EC /* TopViewAlert.h */,
+				DCB804B41E7712A7007340EC /* TopViewAlert.m */,
 				31CE02061E729A650079C13D /* source */,
 			);
 			path = NativeHelper;
@@ -397,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31CE01E31E729A510079C13D /* ViewController.m in Sources */,
+				DCB804B51E7712A7007340EC /* TopViewAlert.m in Sources */,
 				DCB804B11E76F820007340EC /* PhotoImageCollectionCell.m in Sources */,
 				31CE026B1E72A59F0079C13D /* LJAlertView.m in Sources */,
 				31CE02651E72A59F0079C13D /* LJ_FileInfo.m in Sources */,

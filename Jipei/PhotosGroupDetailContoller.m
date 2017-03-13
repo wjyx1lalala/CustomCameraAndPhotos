@@ -11,8 +11,11 @@
 #import "PhotosLoader.h"
 
 #define MARGIN 5
-#define SCREEN_W [UIScreen mainScreen].bounds.size.width
-#define ITEM_WIDTH (SCREEN_W - 10)/3
+
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width 
+#define MIN_W (SCREEN_W > SCREEN_H ? SCREEN_H : SCREEN_W)
+#define ITEM_WIDTH (MIN_W - 2*MARGIN)/3
 
 @interface PhotosGroupDetailContoller ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
@@ -25,7 +28,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setUpUI];
     
     [self loadData];
@@ -43,6 +45,7 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
+    [_collectionView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     _collectionView.backgroundColor = [UIColor whiteColor];
     [_collectionView registerNib:[UINib nibWithNibName:@"PhotoImageCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"PhotoImageCollectionCell"];
     [self.view addSubview:_collectionView];
@@ -71,17 +74,21 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     PhotoImageCollectionCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoImageCollectionCell" forIndexPath:indexPath];
-    
-    
     PHAsset * asset = _dataSource[indexPath.row];
+    if (cell.asset != asset) {
+        cell.imgV.image = nil;
+    }
+    CGSize size = CGSizeMake(asset.pixelWidth, asset.pixelHeight);
+    size = CGSizeMake(ITEM_WIDTH, ITEM_WIDTH);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [[PhotosLoader sharePhotoTool] requestImageForAsset:asset size:CGSizeMake(ITEM_WIDTH, ITEM_WIDTH) resizeMode:PHImageRequestOptionsResizeModeFast completion:^(UIImage *image) {
+        [[PhotosLoader sharePhotoTool] requestImageForAsset:asset size:size resizeMode:PHImageRequestOptionsResizeModeExact completion:^(UIImage *image) {
             dispatch_async(dispatch_get_main_queue(), ^{
+                //指定区域 显示图片
                 cell.imgV.image = image;
             });
         }];
     });
-    
+    cell.asset = asset;
     return cell;
 }
 

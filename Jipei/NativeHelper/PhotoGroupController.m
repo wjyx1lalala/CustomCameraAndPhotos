@@ -10,10 +10,11 @@
 #import "PhotosLoader.h"
 #import "GroupViewCell.h"
 #import "PhotosGroupDetailContoller.h"
+#import "TopViewAlert.h"
 
 @interface PhotoGroupController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong)NSMutableArray * dataSource;
+@property (nonatomic,strong)NSArray * dataSource;
 @property (nonatomic,strong)UITableView * tableView;
 @end
 
@@ -25,17 +26,23 @@
     [self setUpUI];
     [self loadData];
     UIBarButtonItem *backBtnI = [[UIBarButtonItem alloc] initWithTitle:@"重新加载" style:UIBarButtonItemStylePlain target:self action:@selector(loadData)];
-//    
-//    UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]
-//                                       
-//                                       initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-//                                       
-//                                       target:nil action:nil];
-//    
-//    negativeSpacer.width = -17;
-    
+    UIBarButtonItem *cancleBtn = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(clickCancle)];
+    self.navigationItem.rightBarButtonItems = @[cancleBtn];
     self.navigationItem.leftBarButtonItems = @[backBtnI];
     // Do any additional setup after loading the view.
+    if (_dataSource.count > 0) {
+        PhotosGroupDetailContoller * detailVC = [[PhotosGroupDetailContoller alloc] init];
+        NSDictionary * dict = _dataSource[0];
+        PHAssetCollection * collection = dict[@"assetCollection"];
+        detailVC.title = dict[@"title"];
+        detailVC.collection = collection;
+        [self.navigationController pushViewController:detailVC animated:NO];
+    }
+}
+
+- (void)clickCancle{
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)loadData{
@@ -49,6 +56,7 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.tableFooterView = [UIView new];
+    [_tableView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
     [_tableView registerNib:[UINib nibWithNibName:@"GroupViewCell" bundle:nil] forCellReuseIdentifier:@"GroupViewCell"];
     [self.view addSubview:_tableView];
 }

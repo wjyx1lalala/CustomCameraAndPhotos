@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface GroupViewCell : UITableViewCell
 
 @property (nonatomic,strong)NSDictionary * model;
