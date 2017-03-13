@@ -13,6 +13,40 @@
 		31CE01E61E729A510079C13D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CE01E41E729A510079C13D /* Main.storyboard */; };
 		31CE01E81E729A510079C13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CE01E71E729A510079C13D /* Assets.xcassets */; };
 		31CE01EB1E729A510079C13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31CE01E91E729A510079C13D /* LaunchScreen.storyboard */; };
+		31CE02131E729A650079C13D /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE01FF1E729A650079C13D /* CameraController.m */; };
+		31CE02141E729A650079C13D /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02011E729A650079C13D /* ImagePickerController.m */; };
+		31CE02161E729A650079C13D /* PhotoLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02051E729A650079C13D /* PhotoLibraryController.m */; };
+		31CE02171E729A650079C13D /* check_photo_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02071E729A650079C13D /* check_photo_close@2x.png */; };
+		31CE02181E729A650079C13D /* check_photo_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02081E729A650079C13D /* check_photo_close@3x.png */; };
+		31CE02191E729A650079C13D /* photograph_Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02091E729A650079C13D /* photograph_Button@2x.png */; };
+		31CE021A1E729A650079C13D /* photograph_Button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020A1E729A650079C13D /* photograph_Button@3x.png */; };
+		31CE021B1E729A650079C13D /* photograph_choose_touch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020B1E729A650079C13D /* photograph_choose_touch@2x.png */; };
+		31CE021C1E729A650079C13D /* photograph_choose_touch@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020C1E729A650079C13D /* photograph_choose_touch@3x.png */; };
+		31CE021D1E729A650079C13D /* photograph_determine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020D1E729A650079C13D /* photograph_determine@2x.png */; };
+		31CE021E1E729A650079C13D /* photograph_determine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020E1E729A650079C13D /* photograph_determine@3x.png */; };
+		31CE021F1E729A650079C13D /* photograph_Remake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE020F1E729A650079C13D /* photograph_Remake@2x.png */; };
+		31CE02201E729A650079C13D /* photograph_Remake@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02101E729A650079C13D /* photograph_Remake@3x.png */; };
+		31CE02211E729A650079C13D /* photograph_return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02111E729A650079C13D /* photograph_return@2x.png */; };
+		31CE02221E729A650079C13D /* photograph_return@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02121E729A650079C13D /* photograph_return@3x.png */; };
+		31CE02611E72A59F0079C13D /* back_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02501E72A59F0079C13D /* back_icon@2x.png */; };
+		31CE02621E72A59F0079C13D /* back_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02511E72A59F0079C13D /* back_icon@3x.png */; };
+		31CE02631E72A59F0079C13D /* GenericFolderIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE02521E72A59F0079C13D /* GenericFolderIcon.png */; };
+		31CE02641E72A59F0079C13D /* LJ_DirToolNavigatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02541E72A59F0079C13D /* LJ_DirToolNavigatorController.m */; };
+		31CE02651E72A59F0079C13D /* LJ_FileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02561E72A59F0079C13D /* LJ_FileInfo.m */; };
+		31CE02661E72A59F0079C13D /* LJ_FileInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02581E72A59F0079C13D /* LJ_FileInfoController.m */; };
+		31CE02671E72A59F0079C13D /* LJ_FileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE025A1E72A59F0079C13D /* LJ_FileTool.m */; };
+		31CE02681E72A59F0079C13D /* LJ_HomeDirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE025C1E72A59F0079C13D /* LJ_HomeDirViewController.m */; };
+		31CE02691E72A59F0079C13D /* lj_Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = 31CE025D1E72A59F0079C13D /* lj_Pictures.png */; };
+		31CE026A1E72A59F0079C13D /* lj_unknow_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 31CE025E1E72A59F0079C13D /* lj_unknow_icon.jpeg */; };
+		31CE026B1E72A59F0079C13D /* LJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31CE02601E72A59F0079C13D /* LJAlertView.m */; };
+		629B6BEBDBB6A43979282A4E /* libPods-Jipei.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D5AC6393BEA2FBCB2DFCA6 /* libPods-Jipei.a */; };
+		DCB804A01E76D782007340EC /* PhotosLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB8049F1E76D782007340EC /* PhotosLoader.m */; };
+		DCB804A31E76E846007340EC /* PhotoGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804A21E76E846007340EC /* PhotoGroupController.m */; };
+		DCB804A71E76E867007340EC /* GroupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804A51E76E867007340EC /* GroupViewCell.m */; };
+		DCB804A81E76E867007340EC /* GroupViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB804A61E76E867007340EC /* GroupViewCell.xib */; };
+		DCB804AB1E76F756007340EC /* PhotosGroupDetailContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804AA1E76F756007340EC /* PhotosGroupDetailContoller.m */; };
+		DCB804B11E76F820007340EC /* PhotoImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */; };
+		DCB804B21E76F820007340EC /* PhotoImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +60,56 @@
 		31CE01E71E729A510079C13D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31CE01EA1E729A510079C13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31CE01EC1E729A510079C13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31CE01FE1E729A650079C13D /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		31CE01FF1E729A650079C13D /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		31CE02001E729A650079C13D /* ImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
+		31CE02011E729A650079C13D /* ImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
+		31CE02041E729A650079C13D /* PhotoLibraryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryController.h; sourceTree = "<group>"; };
+		31CE02051E729A650079C13D /* PhotoLibraryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryController.m; sourceTree = "<group>"; };
+		31CE02071E729A650079C13D /* check_photo_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_photo_close@2x.png"; sourceTree = "<group>"; };
+		31CE02081E729A650079C13D /* check_photo_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_photo_close@3x.png"; sourceTree = "<group>"; };
+		31CE02091E729A650079C13D /* photograph_Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Button@2x.png"; sourceTree = "<group>"; };
+		31CE020A1E729A650079C13D /* photograph_Button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Button@3x.png"; sourceTree = "<group>"; };
+		31CE020B1E729A650079C13D /* photograph_choose_touch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_choose_touch@2x.png"; sourceTree = "<group>"; };
+		31CE020C1E729A650079C13D /* photograph_choose_touch@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_choose_touch@3x.png"; sourceTree = "<group>"; };
+		31CE020D1E729A650079C13D /* photograph_determine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_determine@2x.png"; sourceTree = "<group>"; };
+		31CE020E1E729A650079C13D /* photograph_determine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_determine@3x.png"; sourceTree = "<group>"; };
+		31CE020F1E729A650079C13D /* photograph_Remake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Remake@2x.png"; sourceTree = "<group>"; };
+		31CE02101E729A650079C13D /* photograph_Remake@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Remake@3x.png"; sourceTree = "<group>"; };
+		31CE02111E729A650079C13D /* photograph_return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_return@2x.png"; sourceTree = "<group>"; };
+		31CE02121E729A650079C13D /* photograph_return@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_return@3x.png"; sourceTree = "<group>"; };
+		31CE02501E72A59F0079C13D /* back_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@2x.png"; sourceTree = "<group>"; };
+		31CE02511E72A59F0079C13D /* back_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_icon@3x.png"; sourceTree = "<group>"; };
+		31CE02521E72A59F0079C13D /* GenericFolderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GenericFolderIcon.png; sourceTree = "<group>"; };
+		31CE02531E72A59F0079C13D /* LJ_DirToolNavigatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_DirToolNavigatorController.h; sourceTree = "<group>"; };
+		31CE02541E72A59F0079C13D /* LJ_DirToolNavigatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_DirToolNavigatorController.m; sourceTree = "<group>"; };
+		31CE02551E72A59F0079C13D /* LJ_FileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfo.h; sourceTree = "<group>"; };
+		31CE02561E72A59F0079C13D /* LJ_FileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfo.m; sourceTree = "<group>"; };
+		31CE02571E72A59F0079C13D /* LJ_FileInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileInfoController.h; sourceTree = "<group>"; };
+		31CE02581E72A59F0079C13D /* LJ_FileInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileInfoController.m; sourceTree = "<group>"; };
+		31CE02591E72A59F0079C13D /* LJ_FileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_FileTool.h; sourceTree = "<group>"; };
+		31CE025A1E72A59F0079C13D /* LJ_FileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_FileTool.m; sourceTree = "<group>"; };
+		31CE025B1E72A59F0079C13D /* LJ_HomeDirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJ_HomeDirViewController.h; sourceTree = "<group>"; };
+		31CE025C1E72A59F0079C13D /* LJ_HomeDirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJ_HomeDirViewController.m; sourceTree = "<group>"; };
+		31CE025D1E72A59F0079C13D /* lj_Pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lj_Pictures.png; sourceTree = "<group>"; };
+		31CE025E1E72A59F0079C13D /* lj_unknow_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lj_unknow_icon.jpeg; sourceTree = "<group>"; };
+		31CE025F1E72A59F0079C13D /* LJAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJAlertView.h; sourceTree = "<group>"; };
+		31CE02601E72A59F0079C13D /* LJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJAlertView.m; sourceTree = "<group>"; };
+		34A1D51548A02992941F0133 /* Pods-Jipei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jipei.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jipei/Pods-Jipei.debug.xcconfig"; sourceTree = "<group>"; };
+		5474B1233D939846EDAA0AA3 /* Pods-Jipei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jipei.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jipei/Pods-Jipei.release.xcconfig"; sourceTree = "<group>"; };
+		D5D5AC6393BEA2FBCB2DFCA6 /* libPods-Jipei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jipei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB8049E1E76D782007340EC /* PhotosLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosLoader.h; path = ../PhotosLoader.h; sourceTree = "<group>"; };
+		DCB8049F1E76D782007340EC /* PhotosLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosLoader.m; path = ../PhotosLoader.m; sourceTree = "<group>"; };
+		DCB804A11E76E846007340EC /* PhotoGroupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGroupController.h; sourceTree = "<group>"; };
+		DCB804A21E76E846007340EC /* PhotoGroupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGroupController.m; sourceTree = "<group>"; };
+		DCB804A41E76E867007340EC /* GroupViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewCell.h; sourceTree = "<group>"; };
+		DCB804A51E76E867007340EC /* GroupViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewCell.m; sourceTree = "<group>"; };
+		DCB804A61E76E867007340EC /* GroupViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupViewCell.xib; sourceTree = "<group>"; };
+		DCB804A91E76F756007340EC /* PhotosGroupDetailContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhotosGroupDetailContoller.h; path = ../PhotosGroupDetailContoller.h; sourceTree = "<group>"; };
+		DCB804AA1E76F756007340EC /* PhotosGroupDetailContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotosGroupDetailContoller.m; path = ../PhotosGroupDetailContoller.m; sourceTree = "<group>"; };
+		DCB804AE1E76F820007340EC /* PhotoImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoImageCollectionCell.h; sourceTree = "<group>"; };
+		DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoImageCollectionCell.m; sourceTree = "<group>"; };
+		DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoImageCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629B6BEBDBB6A43979282A4E /* libPods-Jipei.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +129,8 @@
 			children = (
 				31CE01DA1E729A510079C13D /* Jipei */,
 				31CE01D91E729A510079C13D /* Products */,
+				77F5403D61C03833AB7C4B34 /* Pods */,
+				BE74191F1F0D8056BDB24156 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +145,7 @@
 		31CE01DA1E729A510079C13D /* Jipei */ = {
 			isa = PBXGroup;
 			children = (
+				31CE01FD1E729A650079C13D /* NativeHelper */,
 				31CE01DE1E729A510079C13D /* AppDelegate.h */,
 				31CE01DF1E729A510079C13D /* AppDelegate.m */,
 				31CE01E11E729A510079C13D /* ViewController.h */,
@@ -79,6 +167,93 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		31CE01FD1E729A650079C13D /* NativeHelper */ = {
+			isa = PBXGroup;
+			children = (
+				31CE024F1E72A59F0079C13D /* AppFileDir */,
+				31CE01FE1E729A650079C13D /* CameraController.h */,
+				31CE01FF1E729A650079C13D /* CameraController.m */,
+				31CE02001E729A650079C13D /* ImagePickerController.h */,
+				31CE02011E729A650079C13D /* ImagePickerController.m */,
+				31CE02041E729A650079C13D /* PhotoLibraryController.h */,
+				31CE02051E729A650079C13D /* PhotoLibraryController.m */,
+				DCB804A11E76E846007340EC /* PhotoGroupController.h */,
+				DCB804A21E76E846007340EC /* PhotoGroupController.m */,
+				DCB804A91E76F756007340EC /* PhotosGroupDetailContoller.h */,
+				DCB804AA1E76F756007340EC /* PhotosGroupDetailContoller.m */,
+				DCB804A41E76E867007340EC /* GroupViewCell.h */,
+				DCB804A51E76E867007340EC /* GroupViewCell.m */,
+				DCB804A61E76E867007340EC /* GroupViewCell.xib */,
+				DCB8049E1E76D782007340EC /* PhotosLoader.h */,
+				DCB8049F1E76D782007340EC /* PhotosLoader.m */,
+				DCB804AE1E76F820007340EC /* PhotoImageCollectionCell.h */,
+				DCB804AF1E76F820007340EC /* PhotoImageCollectionCell.m */,
+				DCB804B01E76F820007340EC /* PhotoImageCollectionCell.xib */,
+				31CE02061E729A650079C13D /* source */,
+			);
+			path = NativeHelper;
+			sourceTree = "<group>";
+		};
+		31CE02061E729A650079C13D /* source */ = {
+			isa = PBXGroup;
+			children = (
+				31CE02071E729A650079C13D /* check_photo_close@2x.png */,
+				31CE02081E729A650079C13D /* check_photo_close@3x.png */,
+				31CE02091E729A650079C13D /* photograph_Button@2x.png */,
+				31CE020A1E729A650079C13D /* photograph_Button@3x.png */,
+				31CE020B1E729A650079C13D /* photograph_choose_touch@2x.png */,
+				31CE020C1E729A650079C13D /* photograph_choose_touch@3x.png */,
+				31CE020D1E729A650079C13D /* photograph_determine@2x.png */,
+				31CE020E1E729A650079C13D /* photograph_determine@3x.png */,
+				31CE020F1E729A650079C13D /* photograph_Remake@2x.png */,
+				31CE02101E729A650079C13D /* photograph_Remake@3x.png */,
+				31CE02111E729A650079C13D /* photograph_return@2x.png */,
+				31CE02121E729A650079C13D /* photograph_return@3x.png */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		31CE024F1E72A59F0079C13D /* AppFileDir */ = {
+			isa = PBXGroup;
+			children = (
+				31CE02501E72A59F0079C13D /* back_icon@2x.png */,
+				31CE02511E72A59F0079C13D /* back_icon@3x.png */,
+				31CE02521E72A59F0079C13D /* GenericFolderIcon.png */,
+				31CE02531E72A59F0079C13D /* LJ_DirToolNavigatorController.h */,
+				31CE02541E72A59F0079C13D /* LJ_DirToolNavigatorController.m */,
+				31CE02551E72A59F0079C13D /* LJ_FileInfo.h */,
+				31CE02561E72A59F0079C13D /* LJ_FileInfo.m */,
+				31CE02571E72A59F0079C13D /* LJ_FileInfoController.h */,
+				31CE02581E72A59F0079C13D /* LJ_FileInfoController.m */,
+				31CE02591E72A59F0079C13D /* LJ_FileTool.h */,
+				31CE025A1E72A59F0079C13D /* LJ_FileTool.m */,
+				31CE025B1E72A59F0079C13D /* LJ_HomeDirViewController.h */,
+				31CE025C1E72A59F0079C13D /* LJ_HomeDirViewController.m */,
+				31CE025D1E72A59F0079C13D /* lj_Pictures.png */,
+				31CE025E1E72A59F0079C13D /* lj_unknow_icon.jpeg */,
+				31CE025F1E72A59F0079C13D /* LJAlertView.h */,
+				31CE02601E72A59F0079C13D /* LJAlertView.m */,
+			);
+			path = AppFileDir;
+			sourceTree = "<group>";
+		};
+		77F5403D61C03833AB7C4B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34A1D51548A02992941F0133 /* Pods-Jipei.debug.xcconfig */,
+				5474B1233D939846EDAA0AA3 /* Pods-Jipei.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE74191F1F0D8056BDB24156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5AC6393BEA2FBCB2DFCA6 /* libPods-Jipei.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31CE01EF1E729A510079C13D /* Build configuration list for PBXNativeTarget "Jipei" */;
 			buildPhases = (
+				F19B2A0D47EDCEBF3BA8889F /* [CP] Check Pods Manifest.lock */,
 				31CE01D41E729A500079C13D /* Sources */,
 				31CE01D51E729A500079C13D /* Frameworks */,
 				31CE01D61E729A500079C13D /* Resources */,
+				31DA8173206DC5554502C560 /* [CP] Embed Pods Frameworks */,
+				B88FBB5E9C4A16A43120EE0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +288,7 @@
 				TargetAttributes = {
 					31CE01D71E729A500079C13D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3KX37Y398V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,13 +316,80 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CE02631E72A59F0079C13D /* GenericFolderIcon.png in Resources */,
+				31CE02191E729A650079C13D /* photograph_Button@2x.png in Resources */,
+				31CE021C1E729A650079C13D /* photograph_choose_touch@3x.png in Resources */,
+				31CE02621E72A59F0079C13D /* back_icon@3x.png in Resources */,
+				31CE021B1E729A650079C13D /* photograph_choose_touch@2x.png in Resources */,
+				31CE02201E729A650079C13D /* photograph_Remake@3x.png in Resources */,
+				31CE026A1E72A59F0079C13D /* lj_unknow_icon.jpeg in Resources */,
 				31CE01EB1E729A510079C13D /* LaunchScreen.storyboard in Resources */,
+				DCB804A81E76E867007340EC /* GroupViewCell.xib in Resources */,
+				31CE02171E729A650079C13D /* check_photo_close@2x.png in Resources */,
+				31CE02691E72A59F0079C13D /* lj_Pictures.png in Resources */,
+				31CE02611E72A59F0079C13D /* back_icon@2x.png in Resources */,
+				31CE02221E729A650079C13D /* photograph_return@3x.png in Resources */,
+				31CE02211E729A650079C13D /* photograph_return@2x.png in Resources */,
+				31CE021F1E729A650079C13D /* photograph_Remake@2x.png in Resources */,
+				31CE021E1E729A650079C13D /* photograph_determine@3x.png in Resources */,
 				31CE01E81E729A510079C13D /* Assets.xcassets in Resources */,
+				31CE02181E729A650079C13D /* check_photo_close@3x.png in Resources */,
 				31CE01E61E729A510079C13D /* Main.storyboard in Resources */,
+				31CE021D1E729A650079C13D /* photograph_determine@2x.png in Resources */,
+				DCB804B21E76F820007340EC /* PhotoImageCollectionCell.xib in Resources */,
+				31CE021A1E729A650079C13D /* photograph_Button@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31DA8173206DC5554502C560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jipei/Pods-Jipei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88FBB5E9C4A16A43120EE0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jipei/Pods-Jipei-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19B2A0D47EDCEBF3BA8889F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31CE01D41E729A500079C13D /* Sources */ = {
@@ -151,8 +397,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				31CE01E31E729A510079C13D /* ViewController.m in Sources */,
+				DCB804B11E76F820007340EC /* PhotoImageCollectionCell.m in Sources */,
+				31CE026B1E72A59F0079C13D /* LJAlertView.m in Sources */,
+				31CE02651E72A59F0079C13D /* LJ_FileInfo.m in Sources */,
+				DCB804A01E76D782007340EC /* PhotosLoader.m in Sources */,
+				31CE02641E72A59F0079C13D /* LJ_DirToolNavigatorController.m in Sources */,
+				31CE02161E729A650079C13D /* PhotoLibraryController.m in Sources */,
+				DCB804AB1E76F756007340EC /* PhotosGroupDetailContoller.m in Sources */,
+				DCB804A31E76E846007340EC /* PhotoGroupController.m in Sources */,
+				31CE02681E72A59F0079C13D /* LJ_HomeDirViewController.m in Sources */,
 				31CE01E01E729A510079C13D /* AppDelegate.m in Sources */,
+				31CE02141E729A650079C13D /* ImagePickerController.m in Sources */,
+				31CE02131E729A650079C13D /* CameraController.m in Sources */,
 				31CE01DD1E729A510079C13D /* main.m in Sources */,
+				31CE02661E72A59F0079C13D /* LJ_FileInfoController.m in Sources */,
+				31CE02671E72A59F0079C13D /* LJ_FileTool.m in Sources */,
+				DCB804A71E76E867007340EC /* GroupViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,22 +528,32 @@
 		};
 		31CE01F01E729A510079C13D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A1D51548A02992941F0133 /* Pods-Jipei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KX37Y398V;
 				INFOPLIST_FILE = Jipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xgyg.Jipei;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinguang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		31CE01F11E729A510079C13D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5474B1233D939846EDAA0AA3 /* Pods-Jipei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KX37Y398V;
 				INFOPLIST_FILE = Jipei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xgyg.Jipei;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinguang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -307,6 +577,7 @@
 				31CE01F11E729A510079C13D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

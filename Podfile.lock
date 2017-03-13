@@ -1,0 +1,12 @@
+PODS:
+  - ZYSuspensionView/SuspensionView (0.1.0)
+
+DEPENDENCIES:
+  - ZYSuspensionView/SuspensionView
+
+SPEC CHECKSUMS:
+  ZYSuspensionView: c8acce2e9e979f258f9e18196c3ae94cad381a19
+
+PODFILE CHECKSUM: 3113e1cea9e09cd0b85e1a0511eb91e275bcccbe
+
+COCOAPODS: 1.2.0
