@@ -4,7 +4,8 @@
 //
 //  Created by 魏家园潇 on 2017/3/13.
 //  Copyright © 2017年 xgyg. All rights reserved.
-//
+//  1.支持使用状态下,图片库发生变化
+//  2:前后台进入以后判断图片是否发生了变化
 
 #import "PhotosGroupDetailContoller.h"
 #import "PhotoImageCollectionCell.h"
